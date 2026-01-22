@@ -1,3 +1,5 @@
+// Esse C√≥digo est√° inacabado ( E n√£o Presta)
+// Na sua cria√ß√£o, apenas eu e Deus entendiamos seu funcionamento, agora s√≥ ELe entende
 #include<iostream>
 #include<locale.h>
 using namespace std;
@@ -19,7 +21,7 @@ int main(){
 	cin >> val;
 	iniciar(head,val);
 	do{	
-	cout<< "Agora diga o que vocÍ deseja fazer com nossa lista\n 1 - Imprimir a lista\n 2 - Inserir um valor no inicio \n 3 - Inserir um valor em uma posiÁ„o escolhida\n";
+	cout<< "Agora diga o que voc√™ deseja fazer com nossa lista\n 1 - Imprimir a lista\n 2 - Inserir um valor no inicio \n 3 - Inserir um valor em uma posi√ß√£o escolhida\n";
 	cin >> op;
 	switch(op){
 		case 1:
@@ -27,17 +29,17 @@ int main(){
 		case 2:
 			break;
 		case 3: 
-		cout << "Diga a posiÁ„o desejada\n";
+		cout << "Diga a posi√ß√£o desejada\n";
 		cin >> pos;
 		cout<< "Digite um valor\n";
 		cin >> val;
 		inserir(head,val,pos);
 		break;
 		default :
-		cout << "Resposta Inv·lida!\n";
+		cout << "Resposta Inv√°lida!\n";
 		continue;
 	}
-		cout<< "Deseja tentar novamente?\n 0 - N„o \n 1 - Sim";
+		cout<< "Deseja tentar novamente?\n 0 - N√£o \n 1 - Sim";
 		cin >> op2;
 		switch(op2){
 			case 1: 
@@ -68,7 +70,7 @@ void inserir(ListaPT &l, float val, int pos){
 		aux = aux->next;
 	}
 	if(pos > cont)
-		cout << "INV¡LIDO";
+		cout << "INV√ÅLIDO";
 	else{
 		aux = new ListaP;
 		aux->dado = val;
@@ -79,3 +81,4 @@ void inserir(ListaPT &l, float val, int pos){
 	} 
 	
 }
+
